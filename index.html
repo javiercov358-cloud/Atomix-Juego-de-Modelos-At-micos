@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomix y los Modelos Atómicos</title>
+    <link rel="icon" type="image/png" href="assets/ico.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PANTALLA INICIAL -->
+    <section id="inicio">
+
+        <h1 class="titulo">
+            ATOMIX
+        </h1>
+
+        <p class="subtitulo">
+            Y LOS MODELOS ATÓMICOS
+        </p>
+
+        <button id="btnInicio">
+            INICIAR JUEGO
+        </button>
+
+    </section>
+
+    <!-- INTERFAZ DEL JUEGO -->
+    <section id="juego" class="oculto">
+
+        <!-- PERSONAJE -->
+        <div class="guia-container">
+
+            <img
+            src="assets/atomix_s2.png"
+            class="atomix-grande">
+
+            <div class="dialogo">
+            Hola, soy Atomix. Te explicaré cada modelo atómico.
+            </div>
+
+        </div>
+
+        <!-- MENÚ -->
+        <div class="menu-modelos">
+
+            <button class="modelo-btn">
+                Dalton
+            </button>
+
+            <button class="modelo-btn">
+                Thomson
+            </button>
+
+            <button class="modelo-btn">
+                Rutherford
+            </button>
+
+            <button class="modelo-btn">
+                Bohr
+            </button>
+
+            <button class="modelo-btn">
+                Schrödinger
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- BOTON VOLVER -->
+    <button id="btnVolver" class="oculto">
+        ⬅ Volver
+    </button>
+
+    <!-- PANTALLA DEL MODELO -->
+
+<section id="pantallaModelo" class="oculto">
+
+    <!-- IZQUIERDA -->
+    <div class="panel-atomix">
+
+        <img
+        src="assets/atomix_s3.png"
+        class="atomix-grande">
+
+        <div class="dialogo atomix-dialogo">
+            Selecciona un modelo ⚛️
+        </div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="panel-info">
+
+        <h1 id="modeloTitulo">
+            Modelo Atómico
+        </h1>
+
+        <p id="modeloTexto">
+            Información del modelo...
+        </p>
+
+        <button id="btnQuiz">
+    ⚛️ Iniciar Quiz
+        </button>
+    
+    </div>
+
+    <!-- DERECHA -->
+    <div class="panel-derecha">
+
+       <video
+        id="videoModelo"
+        class="imagen-modelo"
+        autoplay
+        loop
+        muted
+        playsinline>
+
+            <source src="" type="video/mp4">
+
+        </video>
+
+        <img
+        id="imagenCientifico"
+        class="imagen-cientifico"
+        src="">
+
+    </div>
+
+</section>
+
+<!-- PANTALLA QUIZ -->
+
+<section id="pantallaQuiz" class="oculto">
+
+    <div class="quiz-container">
+
+        <h1 id="pregunta">
+            Pregunta
+        </h1>
+
+        <div class="opciones">
+
+            <button class="opcion" id="op1">
+                Opción 1
+            </button>
+
+            <button class="opcion" id="op2">
+                Opción 2
+            </button>
+
+            <button class="opcion" id="op3">
+                Opción 3
+            </button>
+
+            <button class="opcion" id="op4">
+                Opción 4
+            </button>
+
+        </div>
+
+        <h2 id="puntaje">
+            Puntaje: 0
+        </h2>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA FINAL -->
+
+<section id="pantallaFinal" class="oculto">
+
+    <div class="final-container">
+
+        <img
+        id="imagenFinal"
+        src="assets/atomix_s4.png"
+        class="final-atomix">
+
+        <h1 id="mensajeFinal">
+            ¡Excelente trabajo!
+        </h1>
+
+        <h2 id="puntajeFinal">
+            Puntaje: 100
+        </h2>
+
+        <button id="btnMenu">
+            ⬅ Volver al menú
+        </button>
+
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
